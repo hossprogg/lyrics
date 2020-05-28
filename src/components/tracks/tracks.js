@@ -1,8 +1,14 @@
 
 import React from 'react';
+import {Consumer} from '../../context'
+
 const Track = () => {
     return (
-        <h1>new track</h1>
+        <Consumer>
+          {value =>{
+            console.log(value)
+          }}
+        </Consumer>//why it don t works in lowercase letter 
       );
 }
 
